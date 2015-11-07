@@ -1,0 +1,4 @@
+all: rshell.c
+	g++ -Wall -Werror -ansi -pedantic rshell rshell.cc
+clean:
+	$(RM) rshell
