@@ -220,7 +220,7 @@ bool check_operator(std::string h){
 
     while(ch_array[j] != NULL){                                             // i then make a new array that will be sent into the 
         
-        if(strcmp(ch_array[j], "(")  ==0){
+       /* if(strcmp(ch_array[j], "(")  ==0){
             while(strcmp(ch_array[j], ")") != 0){
                 f_array[i] = ch_array[j]; 
                // cout<<count<<" "<<f_array[i]<<endl;
@@ -257,7 +257,7 @@ bool check_operator(std::string h){
                    j++;
                 }
             }
-            else if(strcmp(ch_array[j], "||") == 0){
+            if(strcmp(ch_array[j], "||") == 0){
                  i = 0;                                                      //the result will determine if I skip the next line of commands
                  if(do_op(f_array)){
                    // cout<<"hello"<<endl;
@@ -285,8 +285,8 @@ bool check_operator(std::string h){
                  }
                  j++;
             }
-        }
-        else if(strcmp(ch_array[j], "&&") == 0){
+        }*/
+        if(strcmp(ch_array[j], "&&") == 0){
             f_array[i] = NULL;
 
             if(strcmp(f_array[0], "test") ==0 || strcmp(f_array[0], "[") ==0){          //test if the user entered the test command
